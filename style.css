@@ -326,7 +326,7 @@ a:not(.logo):focus {
 
   color: #212121;
   border: none;
-  background-color: transparent;
+  background-color: #f5f4fa;
   cursor: pointer;
 
   padding: 6px 22px;
@@ -647,6 +647,7 @@ a:not(.logo):focus {
 .our-team {
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: #f5f4fa;
 }
 
 .our-team-tittle {

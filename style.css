@@ -80,6 +80,8 @@ a:not(.logo):focus {
   letter-spacing: 0.02em;
 
   color: #212121;
+
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -103,6 +105,7 @@ a:not(.logo):focus {
   display: flex;
   align-items: center;
 
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -159,17 +162,23 @@ a:not(.logo):focus {
   position: absolute;
   bottom: -42px;
   content: "";
-  display: none;
 
-  background: currentColor;
+  display: block;
+
+  background: transparent;
   border-radius: 2px;
   height: 4px;
   width: 100%;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-list-link:hover:after,
 .nav-list-link:focus:after {
-  display: block;
+  opacity: 1;
+  background: #2196f3;
 }
 
 .contact-list {
